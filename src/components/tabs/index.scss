@@ -1,0 +1,129 @@
+.tab-component {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 60%;
+
+  @media only screen and (max-width: 992px) {
+    width: 90%;
+    margin: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    margin: 5px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 30px;
+  }
+
+  &__header-toggle {
+    display: flex;
+
+    .tab {
+      font-size: 12px;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding-right: 10px;
+      font-weight: 700;
+
+      &.selected {
+        color: #e06960;
+      }
+    }
+  }
+
+  &__body {
+    margin: 10px;
+    padding: 32px;
+    min-height: 300px;
+    border: 2px solid #dbefe1;
+    border-radius: 10px;
+
+    &.text-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.text-content-inside {
+  width: 80%;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
+}
+.font-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media only screen and (max-width: 992px) {
+    justify-content: center;
+  }
+  .font-item {
+    cursor: pointer;
+    display: flex;
+    width: 40%;
+    padding: 20px;
+
+    &.selected {
+      opacity: 50%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      width: 70%;
+      padding: 10px;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 90%;
+      margin: 5px;
+      align-items: center;
+    }
+
+    &__color-wrapper {
+      border-radius: 10px;
+      border: 1px solid black;
+      width: fit-content;
+    }
+
+    &__color {
+      margin: 2px;
+      border-radius: 10px;
+      height: 70px;
+      width: 70px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: flex-end;
+      padding: 20px;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__label {
+      margin-left: 16px;
+      display: list-item;
+      list-style-type: disc;
+      list-style-position: inside;
+      font-weight: 400;
+      width: 50%;
+      text-align: center;
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "extends": "react-app",
+  "env": {
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "import/no-named-as-default-member": "off",
+    "react/require-extension": "off",
+    "react/prefer-stateless-function": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react/forbid-prop-types": "off",
+    "react/prop-types": "off",
+    "curly": 2,
+    "semi": [2, "never"],
+    "comma-dangle": [2, "never"],
+    "no-console": "off",
+    "space-before-function-paren": 0,
+    "max-len": [
+      2,
+      {
+        "code": 135,
+        "tabWidth": 2,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreComments": true
+      }
+    ],
+    "no-continue": 0,
+    "consistent-return": 0,
+    "no-else-return": 0,
+    "array-bracket-spacing": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 1,
+    "import/prefer-default-export": 0,
+    "array-callback-return": 0,
+    "no-underscore-dangle": 0,
+    "class-methods-use-this": 0,
+    "global-require": 0,
+    "arrow-body-style": 0,
+    "eol-last": 2,
+    "arrow-parens": [
+      "off",
+      "as-needed",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "no-const-assign": "error",
+    "no-var": "error",
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": false,
+        "allowUnboundThis": true
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": true
+      }
+    ],
+    "no-trailing-spaces": 2,
+    "no-multiple-empty-lines": 2
+  }
+}
